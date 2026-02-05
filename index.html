@@ -85,6 +85,18 @@
       box-shadow: 0 12px 28px rgba(0,0,0,0.25);
     }
 
+    /* Profile photo */
+    .profile-photo {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid var(--primary);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      margin: auto;
+      display: block;
+    }
+
     /* Contact */
     .contact-grid { display: grid; grid-template-columns: 1fr; gap: 2.5rem; }
     .contact-info p { margin-bottom: 0.7rem; font-size: 1rem; color: #334155; }
@@ -134,37 +146,77 @@
         </div>
       </div>
       <div>
-        <!-- Profile Photo restored -->
         <img src="profile.jpg" alt="Abraham Gebreyohannes" class="profile-photo">
       </div>
     </div>
   </section>
 
-  <!-- About, Skills, Projects sections remain the same except QR Menu video -->
-  <!-- QR-Based Restaurant Menu System -->
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p class="subtitle">A passionate developer focused on building real-world, production-ready systems.</p>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I am a dedicated web developer with hands-on experience building full-stack web applications, business websites, and custom systems. I focus on writing clean, maintainable code and delivering user-friendly, high-performance digital solutions.</p>
+          <p>I have worked on projects in healthcare, hospitality, restaurants, and digital services, integrating features like appointment booking, multilingual support, online payments, and QR-based systems.</p>
+          <p>My goal is to work remotely with international teams, continuously improve my skills, and contribute to meaningful, impactful projects.</p>
+        </div>
+        <div class="about-cards">
+          <div class="about-card"><h4>💻 Development</h4><p>Laravel, PHP, MySQL, REST APIs, MVC architecture, clean code.</p></div>
+          <div class="about-card"><h4>🎨 UI/UX</h4><p>Responsive design, Tailwind CSS, Bootstrap, modern layouts.</p></div>
+          <div class="about-card"><h4>🚀 Performance</h4><p>Fast-loading sites, optimization, security best practices.</p></div>
+          <div class="about-card"><h4>🌍 Remote Work</h4><p>Communication, collaboration, version control (Git/GitHub).</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <p class="subtitle">Technologies and tools I work with regularly.</p>
+      <div class="skills-grid">
+        <div class="skill">Laravel</div>
+        <div class="skill">PHP</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">HTML5</div>
+        <div class="skill">CSS3</div>
+        <div class="skill">Tailwind CSS</div>
+        <div class="skill">Bootstrap</div>
+        <div class="skill">REST APIs</div>
+        <div class="skill">Git & GitHub</div>
+        <div class="skill">Payment Integration</div>
+        <div class="skill">Multilingual Websites</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
   <section id="projects">
     <div class="container">
       <h2>Projects</h2>
       <p class="subtitle">Some of the real-world projects I’ve designed and developed.</p>
       <div class="projects-grid">
 
-        <!-- QR Menu Project with your video -->
+        <!-- QR Menu Project with your real screen recording -->
         <div class="project-card">
           <div class="project-content">
             <h3>QR-Based Restaurant Menu System</h3>
-            <p>
-              A QR code-powered digital menu system allowing customers to view menus on their phones, improving hygiene, speed, and user experience for restaurants and cafes.
-            </p>
+            <p>A QR code-powered digital menu system allowing customers to view menus on their phones, improving hygiene, speed, and user experience for restaurants and cafes.</p>
             <div class="project-tags">
               <span class="tag">QR Code</span>
               <span class="tag">Web App</span>
               <span class="tag">Hospitality</span>
             </div>
-            <!-- Use your actual video from video folder -->
+
             <video class="project-video" controls onclick="this.requestFullscreen()">
-              <source src="video/your-video-file.mp4" type="video/mp4">
+              <source src="video/Home - Farmi - Google Chrome 2026-02-03 23-07-36.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+
             <div class="project-links">
               <a href="#" onclick="alert('Live demo available on request')">Live Demo</a>
             </div>
@@ -175,6 +227,30 @@
     </div>
   </section>
 
-  <!-- Contact section unchanged -->
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p class="subtitle">Let’s work together — feel free to reach out.</p>
+      <div class="contact-grid">
+        <div class="contact-card contact-info">
+          <p><strong>Email:</strong> <a href="mailto:abrahamgebreyohannes12@gmail.com">abrahamgebreyohannes12@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+251949470429">+251 949 470 429</a></p>
+          <p><strong>Telegram:</strong> <a href="https://t.me/a123abrsh" target="_blank">@a123abrsh</a></p>
+          <p><strong>Portfolio:</strong> <a href="https://abraham952.github.io" target="_blank">abraham952.github.io</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/abraham952" target="_blank">github.com/abraham952</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Abraham Gebreyohannes. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>

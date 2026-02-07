@@ -373,7 +373,6 @@
     </div>
   </section>
 
-  <!-- Certificates Section -->
 <!-- Certificates Section -->
 <section id="certificates">
   <div class="container">
@@ -405,27 +404,27 @@
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    perspective: 1000px; /* needed for 3D rotation */
+    perspective: 1000px; /* for 3D rotation */
   }
 
   .certificate-card img {
     width: 100%;
-    max-width: 300px; /* keep original size */
+    max-width: 300px;
     border-radius: 10px;
-    transition: transform 1s; /* smooth full rotation */
-    backface-visibility: hidden; /* ensures back side isn't shown */
+    transition: transform 0.8s ease; /* smooth rotation & scale */
+    backface-visibility: hidden;
   }
 
-  /* Full horizontal flip on hover */
+  /* Hover effects */
   .certificate-card:nth-child(1):hover img {
-    transform: rotateY(180deg); /* flips cert1 left-right */
+    transform: rotateY(180deg) scaleX(1.2); /* horizontal flip + increase width */
   }
 
-  /* Full vertical flip on hover */
   .certificate-card:nth-child(2):hover img {
-    transform: rotateX(180deg); /* flips cert2 up-down */
+    transform: rotateX(180deg) scaleX(1.2); /* vertical flip + increase width */
   }
 </style>
+
 
 
   <!-- Contact Section -->
@@ -484,6 +483,7 @@
 
 </body>
 </html>
+
 
 
 

@@ -374,31 +374,56 @@
   </section>
 
   <!-- Certificates Section -->
-  <section id="certificates">
-    <div class="container">
-      <h2>Certificates</h2>
-      <p class="subtitle">Some of the certifications I’ve earned to strengthen my skills.</p>
-      <div class="certificates-grid">
+  <!-- Certificates Section -->
+<section id="certificates">
+  <div class="container">
+    <h2>Certificates</h2>
+    <p class="subtitle">Some of the certifications I’ve earned to strengthen my skills.</p>
+    <div class="certificates-grid">
 
-        <a href="certificates/cert1.jpg.jpg" target="_blank" class="certificate-card">
-          <img src="certificates/cert1.jpg.jpg" alt="Certificate 1">
-          <p>Stem Center Certificate</p>
-        </a>
+      <a href="certificates/cert1.jpg.jpg" target="_blank" class="certificate-card">
+        <img src="certificates/cert1.jpg.jpg" alt="Certificate 1">
+        <p>Stem Center Certificate</p>
+      </a>
 
-        <a href="certificates/cert2.jpg.jpg" target="_blank" class="certificate-card">
-          <img src="certificates/cert2.jpg.jpg" alt="Certificate 2">
-          <p></p>
-        </a>
+      <a href="certificates/cert2.jpg.jpg" target="_blank" class="certificate-card">
+        <img src="certificates/cert2.jpg.jpg" alt="Certificate 2">
+        <p></p>
+      </a>
 
-        <a href="certificates/cert3.jpg.jpg" target="_blank" class="certificate-card">
-          <img src="certificates/cert3.jpg.jpg" alt="Certificate 3">
-          <p></p>
-        </a>
+      <a href="certificates/cert3.jpg.jpg" target="_blank" class="certificate-card">
+        <img src="certificates/cert3.jpg.jpg" alt="Certificate 3">
+        <p></p>
+      </a>
 
-
-      </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- Add this CSS either in your main CSS file or in a <style> tag -->
+<style>
+  .certificates-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .certificate-card img {
+    width: 100%;
+    max-width: 250px;
+    transition: transform 0.6s ease; /* smooth rotation */
+    border-radius: 10px;
+  }
+
+  /* Rotate on hover */
+  .certificate-card:nth-child(1):hover img {
+    transform: rotate(15deg); /* cert1 rotates 15° */
+  }
+
+  .certificate-card:nth-child(2):hover img {
+    transform: rotate(-15deg); /* cert2 rotates -15° */
+  }
+</style>
 
   <!-- Contact Section -->
   <section id="contact">
@@ -456,6 +481,7 @@
 
 </body>
 </html>
+
 
 
 

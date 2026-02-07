@@ -407,23 +407,39 @@
     perspective: 1000px; /* for 3D rotation */
   }
 
+  .certificate-card {
+    display: inline-block;
+    transition: transform 0.8s ease; /* smooth hover for box + image */
+  }
+
   .certificate-card img {
     width: 100%;
     max-width: 300px;
     border-radius: 10px;
-    transition: transform 0.8s ease; /* smooth rotation & scale */
+    transition: transform 0.8s ease;
     backface-visibility: hidden;
   }
 
-  /* Hover effects */
+  /* Hover effects: box grows horizontally + image flips */
+  .certificate-card:nth-child(1):hover {
+    transform: scaleX(1.2); /* box grows 20% wider */
+  }
+
   .certificate-card:nth-child(1):hover img {
-    transform: rotateY(180deg) scaleX(1.2); /* horizontal flip + increase width */
+    transform: rotateY(180deg); /* image flips horizontally */
+  }
+
+  .certificate-card:nth-child(2):hover {
+    transform: scaleX(1.2); /* box grows 20% wider */
   }
 
   .certificate-card:nth-child(2):hover img {
-    transform: rotateX(180deg) scaleX(1.2); /* vertical flip + increase width */
+    transform: rotateX(180deg); /* image flips vertically */
   }
+
+  /* Cert3 stays normal */
 </style>
+
 
 
 
@@ -483,6 +499,7 @@
 
 </body>
 </html>
+
 
 
 

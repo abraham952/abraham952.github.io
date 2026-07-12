@@ -13,7 +13,15 @@ class AIChatbot {
     if (typeof knowledgeBase !== 'undefined' && typeof generateResponse !== 'undefined') {
       console.log('AI Chatbot initialized with knowledge base');
     } else {
-      console.error('Knowledge base not loaded');
+      console.warn('Knowledge base functions not loaded yet, will retry...');
+      // Retry after a short delay
+      setTimeout(() => {
+        if (typeof knowledgeBase !== 'undefined' && typeof generateResponse !== 'undefined') {
+          console.log('AI Chatbot initialized with knowledge base (retry)');
+        } else {
+          console.error('Knowledge base still not loaded after retry');
+        }
+      }, 500);
     }
   }
 

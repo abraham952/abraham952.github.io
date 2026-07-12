@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,746 +24,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Noto+Sans+Ethiopic:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>AG</text></svg>" />
-  <script>
-    (function () {
-      try {
-        var t = localStorage.getItem("theme");
-        var dark = t !== "light" && (t === "dark" || !t || window.matchMedia("(prefers-color-scheme: dark)").matches);
-        document.documentElement.setAttribute("data-theme", dark ? "dark" : "light");
-        var l = localStorage.getItem("lang");
-        if (l) document.documentElement.lang = l === "am" ? "am" : l === "om" ? "om" : "en";
-      } catch (e) {}
-    })();
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Abraham Gebreyohannes",
-    "jobTitle": "Full-Stack Web Developer",
-    "url": "https://abraham952.github.io",
-    "email": "abrahamgebreyohannes12@gmail.com",
-    "telephone": "+251949470429",
-    "address": { "@type": "PostalAddress", "addressCountry": "ET" },
-    "sameAs": [
-      "https://github.com/abraham952",
-      "https://t.me/a123abrsh"
-    ],
-    "knowsAbout": ["Laravel", "PHP", "MySQL", "JavaScript", "REST APIs", "Web Development"]
-  }
-  </script>
-</head>
-<body>
-
-  <!-- Boot loader (reference: COMPILING_PORTFOLIO_CORE) -->
-  <div id="preloader" class="preloader" aria-hidden="true">
-    <div class="preloader-inner">
-      <div class="preloader-logo">AG</div>
-      <p class="preloader-title">COMPILING_PORTFOLIO_CORE</p>
-      <p class="preloader-status" id="preloaderStatus" data-i18n="preloader.status">Loading diagnostic packages &amp; CV matrices...</p>
-      <div class="preloader-bar"><div class="preloader-bar-fill" id="preloaderBar"></div></div>
-      <p class="preloader-log" id="preloaderLog" aria-live="polite"></p>
-    </div>
-  </div>
-
-  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
-  <canvas id="particleCanvas" class="particle-canvas" aria-hidden="true"></canvas>
-
-  <a href="#home" class="skip-link" data-i18n="skip">Skip to content</a>
-
-  <!-- Header -->
-  <header class="site-header" role="banner">
-    <div class="container nav">
-      <a href="#home" class="logo" aria-label="Abraham Gebreyohannes — Home">
-        <span class="logo-initials" aria-hidden="true">AG</span>
-        Abraham<span class="logo-accent">.</span>dev
-      </a>
-
-      <div class="nav-tools">
-        <div class="lang-switcher" role="group" aria-label="Language">
-          <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
-          <button type="button" class="lang-btn" data-lang="am" aria-pressed="false">አማ</button>
-          <button type="button" class="lang-btn" data-lang="om" aria-pressed="false">OM</button>
-        </div>
-        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-        </button>
-      </div>
-
-      <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#about" data-i18n="nav.about">About</a>
-        <a href="#services" data-i18n="nav.services">Services</a>
-        <a href="#skills" data-i18n="nav.skills">Skills</a>
-        <a href="#projects" data-i18n="nav.projects">Projects</a>
-        <a href="#experience" data-i18n="nav.experience">Experience</a>
-        <a href="#certificates" data-i18n="nav.certificates">Certificates</a>
-        <a href="#contact" class="nav-cta" data-i18n="nav.hire">Hire Me / Chat</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-
-    <!-- Hero -->
-  <section id="home" class="hero">
-      <div class="container">
-        <div class="hero-grid">
-          <div class="reveal">
-            <div class="hero-badge">
-              <span class="pulse" aria-hidden="true"></span>
-              <span data-i18n="hero.badge">Available for remote work</span>
-            </div>
-
-            <h1 data-i18n-html="hero.greeting">
-              Hi, I'm<br />
-              <span class="gradient">Abraham Gebreyohannes</span>
-            </h1>
-
-            <p class="hero-role" aria-live="polite">
-              <span class="hero-role-text"></span><span class="cursor" aria-hidden="true"></span>
-            </p>
-
-            <p class="hero-desc" data-i18n="hero.desc">
-              I design and build production-ready web applications — from multilingual healthcare platforms to QR-powered restaurant systems — using Laravel, PHP, MySQL, and modern JavaScript.
-            </p>
-
-            <div class="hero-actions">
-              <a href="#projects" class="btn btn-primary">
-                <span data-i18n="hero.viewProjects">View Projects</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-              <a href="#contact" class="btn btn-ghost"><span data-i18n="hero.getInTouch">Get In Touch</span></a>
-              <a href="resume.pdf" class="btn btn-ghost btn-cv" id="cvBtn" download="Abraham-Gebreyohannes-Resume.pdf" title="Download my resume (PDF)">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-                <span data-i18n="hero.downloadCv">Download CV</span>
-              </a>
-            </div>
-
-            <div class="social-row" aria-label="Social links">
-              <a href="https://github.com/abraham952" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-              </a>
-              <a href="mailto:abrahamgebreyohannes12@gmail.com" aria-label="Email">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
-              </a>
-              <a href="https://t.me/a123abrsh" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0h-.056zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-              </a>
-            </div>
-
-            <div class="stats-row" aria-label="Highlights">
-              <div class="stat">
-                <div class="stat-value">4+</div>
-                <div class="stat-label" data-i18n="hero.stat1">Live Projects</div>
-              </div>
-              <div class="stat">
-                <div class="stat-value">3</div>
-                <div class="stat-label" data-i18n="hero.stat2">Industries Served</div>
-              </div>
-              <div class="stat">
-                <div class="stat-value">100%</div>
-                <div class="stat-label" data-i18n="hero.stat3">Client Focused</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="hero-visual reveal">
-            <div class="terminal-window" aria-label="Developer terminal preview">
-              <div class="terminal-header">
-                <span class="terminal-dot red"></span>
-                <span class="terminal-dot yellow"></span>
-                <span class="terminal-dot green"></span>
-                <span class="terminal-title">abraham@portfolio ~ bash</span>
-              </div>
-              <div class="terminal-body" id="terminalBody">
-                <p><span class="t-prompt">$</span> <span class="t-cmd">whoami</span></p>
-                <p class="t-out">Abraham Gebreyohannes</p>
-                <p><span class="t-prompt">$</span> <span class="t-cmd">cat role.txt</span></p>
-                <p class="t-out t-accent" data-i18n="hero.termRole">Full-Stack Web Developer</p>
-                <p><span class="t-prompt">$</span> <span class="t-cmd">ls skills/</span></p>
-                <p class="t-out t-dim">laravel.php mysql.js tailwind git</p>
-                <p><span class="t-prompt">$</span> <span class="t-cmd t-blink" id="terminalCursor">_</span></p>
-              </div>
-            </div>
-            <div class="profile-wrap">
-              <img src="profile.jpg" alt="Abraham Gebreyohannes — Full-Stack Web Developer" class="profile-photo" width="320" height="320" loading="eager" />
-            </div>
-          </div>
-      </div>
-    </div>
-  </section>
-
-    <!-- About -->
- <section id="about">
-  <div class="container">
-        <div class="section-header reveal">
-          <p class="section-label" data-i18n="about.label">About</p>
-          <h2 class="section-title" data-i18n="about.title">Building real-world systems that work</h2>
-          <p class="section-subtitle" data-i18n="about.subtitle">A passionate developer focused on clean code, scalable architecture, and user-centered design.</p>
-        </div>
-
-    <div class="about-grid">
-          <div class="about-text reveal">
-            <p data-i18n="about.p1">I'm a dedicated full-stack web developer with hands-on experience building production web applications, business websites, and custom systems. I write clean, maintainable code and deliver high-performance digital solutions that solve real business problems.</p>
-            <p data-i18n="about.p2">My work spans healthcare, hospitality, and restaurants — integrating appointment booking, multilingual support, online payments, and QR-based systems into polished, responsive experiences.</p>
-            <p data-i18n="about.p3">Beyond development, I completed intensive training at STEM Power, participating in national-level STEM competitions that sharpened my analytical thinking, teamwork, and engineering mindset.</p>
-            <p data-i18n="about.p4">My goal is to collaborate with international teams remotely, continuously grow as an engineer, and contribute to meaningful, impactful digital products.</p>
-      </div>
-
-          <div class="highlight-cards reveal">
-            <div class="highlight-card">
-              <div class="icon" aria-hidden="true">⚡</div>
-              <h3 data-i18n="about.c1t">Full-Stack Development</h3>
-              <p data-i18n="about.c1d">Laravel, PHP, MySQL, REST APIs, MVC architecture, and scalable backend systems.</p>
-            </div>
-            <div class="highlight-card">
-              <div class="icon" aria-hidden="true">🎨</div>
-              <h3 data-i18n="about.c2t">UI & Frontend</h3>
-              <p data-i18n="about.c2d">Responsive design with Tailwind CSS, Bootstrap, and modern user-focused layouts.</p>
-            </div>
-            <div class="highlight-card">
-              <div class="icon" aria-hidden="true">🔒</div>
-              <h3 data-i18n="about.c3t">Performance & Security</h3>
-              <p data-i18n="about.c3d">Optimized loading, secure practices, and reliable production deployments.</p>
-            </div>
-            <div class="highlight-card">
-              <div class="icon" aria-hidden="true">🌍</div>
-              <h3 data-i18n="about.c4t">Remote Ready</h3>
-              <p data-i18n="about.c4d">Strong communication, Git workflows, and async collaboration experience.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Services -->
-    <section id="services">
-      <div class="container">
-        <div class="section-header center reveal">
-          <p class="section-label" data-i18n="services.label">&gt; services.init()</p>
-          <h2 class="section-title" data-i18n="services.title">What I build for you</h2>
-          <p class="section-subtitle" data-i18n="services.subtitle">End-to-end digital solutions tailored to real business needs.</p>
-        </div>
-
-        <div class="services-grid">
-          <article class="service-card reveal">
-            <div class="service-num">01</div>
-            <h3 data-i18n="services.s1t">Full-Stack Web Apps</h3>
-            <p data-i18n="services.s1d">Custom Laravel applications with secure backends, REST APIs, admin panels, and production-ready deployments.</p>
-            <ul class="service-list">
-              <li>MVC architecture</li>
-              <li>Database design</li>
-              <li>Authentication</li>
-            </ul>
-          </article>
-          <article class="service-card reveal">
-            <div class="service-num">02</div>
-            <h3 data-i18n="services.s2t">Business Websites</h3>
-            <p data-i18n="services.s2d">Modern, responsive websites for clinics, hotels, and restaurants — built to convert visitors into customers.</p>
-            <ul class="service-list">
-              <li>Multilingual support</li>
-              <li>SEO-friendly structure</li>
-              <li>Mobile-first UI</li>
-            </ul>
-          </article>
-          <article class="service-card reveal">
-            <div class="service-num">03</div>
-            <h3 data-i18n="services.s3t">Feature Integrations</h3>
-            <p data-i18n="services.s3d">Booking systems, QR menus, payment gateways, and contact workflows integrated into your existing stack.</p>
-            <ul class="service-list">
-              <li>Payment integration</li>
-              <li>QR systems</li>
-              <li>Appointment booking</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills">
-      <div class="container">
-        <div class="section-header center reveal">
-          <p class="section-label" data-i18n="skills.label">&gt; skills.load()</p>
-          <h2 class="section-title" data-i18n="skills.title">Technologies I work with</h2>
-          <p class="section-subtitle" data-i18n="skills.subtitle">A focused toolkit for building modern, production-grade web applications.</p>
-        </div>
-
-        <div class="skill-bars reveal">
-          <div class="skill-bar-item" data-level="92">
-            <div class="skill-bar-header"><span>Laravel / PHP</span><span class="skill-pct">0%</span></div>
-            <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
-          </div>
-          <div class="skill-bar-item" data-level="88">
-            <div class="skill-bar-header"><span>MySQL &amp; Database Design</span><span class="skill-pct">0%</span></div>
-            <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
-          </div>
-          <div class="skill-bar-item" data-level="85">
-            <div class="skill-bar-header"><span>JavaScript &amp; Frontend</span><span class="skill-pct">0%</span></div>
-            <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
-          </div>
-          <div class="skill-bar-item" data-level="90">
-            <div class="skill-bar-header"><span>Responsive UI / UX</span><span class="skill-pct">0%</span></div>
-            <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
-          </div>
-          <div class="skill-bar-item" data-level="87">
-            <div class="skill-bar-header"><span>Git, APIs &amp; Integrations</span><span class="skill-pct">0%</span></div>
-            <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
-          </div>
-        </div>
-
-        <div class="tech-marquee reveal" aria-hidden="true">
-          <div class="marquee-track">
-            <span>Laravel</span><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>Tailwind</span><span>Bootstrap</span><span>REST APIs</span><span>Git</span><span>HTML5</span><span>CSS3</span>
-            <span>Laravel</span><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>Tailwind</span><span>Bootstrap</span><span>REST APIs</span><span>Git</span><span>HTML5</span><span>CSS3</span>
-          </div>
-        </div>
-
-        <div class="skills-wrap">
-          <div class="skill-group reveal">
-            <h3 data-i18n="skills.backend">Backend</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">Laravel</span>
-              <span class="skill-tag">PHP</span>
-              <span class="skill-tag">MySQL</span>
-              <span class="skill-tag">REST APIs</span>
-              <span class="skill-tag">MVC Architecture</span>
-            </div>
-          </div>
-          <div class="skill-group reveal">
-            <h3 data-i18n="skills.frontend">Frontend</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">JavaScript</span>
-              <span class="skill-tag">HTML5</span>
-              <span class="skill-tag">CSS3</span>
-              <span class="skill-tag">Tailwind CSS</span>
-              <span class="skill-tag">Bootstrap</span>
-              <span class="skill-tag">Responsive Design</span>
-            </div>
-          </div>
-          <div class="skill-group reveal">
-            <h3 data-i18n="skills.tools">Tools & Integrations</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">Git & GitHub</span>
-              <span class="skill-tag">Payment Integration</span>
-              <span class="skill-tag">Multilingual Sites</span>
-              <span class="skill-tag">QR Systems</span>
-              <span class="skill-tag">Booking Systems</span>
-      </div>
-    </div>
-      </div>
-    </div>
-  </section>
-
-    <!-- Projects -->
-  <section id="projects">
-    <div class="container">
-        <div class="section-header center reveal">
-          <p class="section-label" data-i18n="projects.label">&gt; projects.list()</p>
-          <h2 class="section-title" data-i18n="projects.title">Selected work</h2>
-          <p class="section-subtitle" data-i18n="projects.subtitle">Real-world projects designed and developed end-to-end.</p>
-        </div>
-
-        <div class="project-filters reveal" role="tablist" aria-label="Filter projects">
-          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true" data-i18n="projects.all">All</button>
-          <button class="filter-btn" data-filter="healthcare" role="tab" data-i18n="projects.healthcare">Healthcare</button>
-          <button class="filter-btn" data-filter="hospitality" role="tab" data-i18n="projects.hospitality">Hospitality</button>
-          <button class="filter-btn" data-filter="restaurant" role="tab" data-i18n="projects.restaurant">Restaurant</button>
-        </div>
-
-      <div class="projects-grid">
-
-          <!-- Featured -->
-          <article class="project-card featured reveal" data-category="healthcare">
-            <div class="project-thumb">
-              <span class="project-icon" aria-hidden="true">🏥</span>
-            </div>
-            <div class="project-body">
-              <div class="project-meta">
-                <span class="project-type" data-i18n="projects.p1type">Featured · Healthcare</span>
-              </div>
-              <h3 data-i18n="projects.p1t">Dr. Debele Tola Medical Clinic</h3>
-              <p data-i18n="projects.p1d">
-                A professional healthcare platform with appointment booking, multilingual support (English, Amharic, Afaan Oromo), and a modern responsive design — improving patient experience and accessibility at scale.
-            </p>
-            <div class="project-tags">
-              <span class="tag">Laravel</span>
-              <span class="tag">Multilingual</span>
-              <span class="tag">Booking System</span>
-                <span class="tag">Healthcare</span>
-            </div>
-            <div class="project-links">
-                <a href="https://drdebeleclinic.com" target="_blank" rel="noopener noreferrer" class="primary-link">
-                  <span data-i18n="projects.liveSite">Live Site ↗</span>
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card reveal" data-category="hospitality restaurant">
-            <div class="project-thumb">
-              <span class="project-icon" aria-hidden="true">📱</span>
-          </div>
-            <div class="project-body">
-              <div class="project-meta">
-                <span class="project-type" data-i18n="projects.p2type">Hospitality</span>
-        </div>
-              <h3 data-i18n="projects.p2t">QR-Based Restaurant Menu</h3>
-              <p data-i18n="projects.p2d">
-                A QR code-powered digital menu system letting customers browse menus on their phones — improving hygiene, speed, and UX for restaurants and cafes.
-            </p>
-            <div class="project-tags">
-              <span class="tag">QR Code</span>
-              <span class="tag">Web App</span>
-              <span class="tag">Hospitality</span>
-            </div>
-            <div class="project-links">
-                <a href="https://github.com/abraham952/QR-menu" target="_blank" rel="noopener noreferrer"><span data-i18n="projects.sourceCode">Source Code</span></a>
-                <a href="#" onclick="openVideo('video/video_2026-02-05_21-45-04.mp4'); return false;"><span data-i18n="projects.watchDemo">Watch Demo</span></a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card reveal" data-category="restaurant">
-            <div class="project-thumb">
-              <span class="project-icon" aria-hidden="true">🍽️</span>
-          </div>
-            <div class="project-body">
-              <div class="project-meta">
-                <span class="project-type" data-i18n="projects.p3type">Restaurant</span>
-        </div>
-              <h3 data-i18n="projects.p3t">Farmi Restaurant Website</h3>
-              <p data-i18n="projects.p3d">
-                A modern restaurant website showcasing menu items, services, and contact information — designed to attract customers and strengthen online presence.
-            </p>
-            <div class="project-tags">
-                <span class="tag">Responsive</span>
-              <span class="tag">Business Website</span>
-                <span class="tag">UI/UX</span>
-            </div>
-            <div class="project-links">
-                <a href="https://github.com/abraham952/Farmi_-web" target="_blank" rel="noopener noreferrer"><span data-i18n="projects.sourceCode">Source Code</span></a>
-                <a href="#" onclick="openVideo(); return false;"><span data-i18n="projects.watchDemo">Watch Demo</span></a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card reveal" data-category="hospitality">
-            <div class="project-thumb">
-              <span class="project-icon" aria-hidden="true">🏨</span>
-          </div>
-            <div class="project-body">
-              <div class="project-meta">
-                <span class="project-type" data-i18n="projects.p4type">Hospitality</span>
-        </div>
-              <h3 data-i18n="projects.p4t">Fira Hotel Website</h3>
-              <p data-i18n="projects.p4d">
-                A professional hotel website with room listings, services, contact forms, and a clean UI — helping guests easily explore and book accommodations.
-            </p>
-            <div class="project-tags">
-              <span class="tag">Hotel</span>
-              <span class="tag">Hospitality</span>
-              <span class="tag">UI/UX</span>
-            </div>
-            <div class="project-links">
-                <a href="https://firahotel.com.et/"><span data-i18n="projects.liveSite">Live Site ↗</span>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience -->
-    <section id="experience">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-label" data-i18n="experience.label">Experience</p>
-          <h2 class="section-title" data-i18n="experience.title">Background & growth</h2>
-          <p class="section-subtitle" data-i18n="experience.subtitle">Education, training, and hands-on project experience that shaped my development journey.</p>
-        </div>
-
-        <div class="timeline reveal">
-          <div class="timeline-item">
-            <p class="timeline-date" data-i18n="experience.e1d">2024 — Present</p>
-            <h3 data-i18n="experience.e1t">Freelance Full-Stack Web Developer</h3>
-            <p class="timeline-org" data-i18n="experience.e1o">Independent · Remote</p>
-            <p data-i18n="experience.e1p">Building and deploying web applications for healthcare, hospitality, and restaurant clients — from concept to production.</p>
-          </div>
-          <div class="timeline-item">
-            <p class="timeline-date" data-i18n="experience.e2d">STEM Power Training</p>
-            <h3 data-i18n="experience.e2t">STEM Engineering Program</h3>
-            <p class="timeline-org" data-i18n="experience.e2o">STEM Power · National Competitions</p>
-            <p data-i18n="experience.e2p">Intensive training in problem-solving, teamwork, innovation, and engineering thinking. Competed at national-level STEM events.</p>
-          </div>
-          <div class="timeline-item">
-            <p class="timeline-date" data-i18n="experience.e3d">Academic</p>
-            <h3 data-i18n="experience.e3t">Outstanding Student Recognition</h3>
-            <p class="timeline-org" data-i18n="experience.e3o">Academic Excellence & Leadership</p>
-            <p data-i18n="experience.e3p">Recognized for industrious performance, discipline, leadership qualities, and positive contributions to school and extracurricular activities.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimonials" class="testimonials-section">
-      <div class="container">
-        <div class="section-header center reveal">
-          <p class="section-label" data-i18n="testimonials.label">&gt; feedback.log()</p>
-          <h2 class="section-title" data-i18n="testimonials.title">What clients say</h2>
-          <p class="section-subtitle" data-i18n="testimonials.subtitle">Trusted by businesses across healthcare, hospitality, and dining.</p>
-        </div>
-
-        <div class="testimonials-grid">
-          <blockquote class="testimonial-card reveal">
-            <p data-i18n="testimonials.t1">"Abraham delivered a professional clinic website with multilingual support and booking — exactly what we needed for our patients."</p>
-            <footer>
-              <strong>Healthcare Client</strong>
-              <span>Dr. Debele Tola Medical Clinic</span>
-            </footer>
-          </blockquote>
-          <blockquote class="testimonial-card reveal">
-            <p data-i18n="testimonials.t2">"The QR menu system improved our service speed and customer experience. Clean design and easy for staff to manage."</p>
-            <footer>
-              <strong>Restaurant Owner</strong>
-              <span>QR Menu Project</span>
-            </footer>
-          </blockquote>
-          <blockquote class="testimonial-card reveal">
-            <p data-i18n="testimonials.t3">"Responsive, modern, and built with attention to detail. Abraham communicates clearly and delivers on time."</p>
-            <footer>
-              <strong>Business Client</strong>
-              <span>Hospitality &amp; Web Projects</span>
-            </footer>
-          </blockquote>
-      </div>
-    </div>
-  </section>
-
-    <!-- Certificates -->
-<section id="certificates">
-  <div class="container">
-        <div class="section-header center reveal">
-          <p class="section-label" data-i18n="certificates.label">Certificates</p>
-          <h2 class="section-title" data-i18n="certificates.title">Credentials & recognition</h2>
-          <p class="section-subtitle" data-i18n="certificates.subtitle">Certifications and recommendation letters earned through dedication and achievement.</p>
-        </div>
-
-    <div class="certificates-grid">
-          <a href="certificates/cert1.jpg.jpg" target="_blank" rel="noopener noreferrer" class="certificate-card reveal">
-            <img src="certificates/cert1.jpg.jpg" alt="STEM Center Certificate 1" loading="lazy" />
-            <div class="cert-info">
-              <h3 data-i18n="certificates.c1">STEM Center Certificate</h3>
-              <p data-i18n="certificates.cSub">STEM Power · Engineering Training</p>
-            </div>
-          </a>
-          <a href="certificates/cert2.jpg.jpg" target="_blank" rel="noopener noreferrer" class="certificate-card reveal">
-            <img src="certificates/cert2.jpg.jpg" alt="STEM Center Certificate 2" loading="lazy" />
-            <div class="cert-info">
-              <h3 data-i18n="certificates.c1">STEM Center Certificate</h3>
-              <p data-i18n="certificates.cSub">STEM Power · Engineering Training</p>
-            </div>
-          </a>
-          <a href="certificates/cert3.jpg.jpg" target="_blank" rel="noopener noreferrer" class="certificate-card reveal">
-            <img src="certificates/cert3.jpg.jpg" alt="Recommendation Letter" loading="lazy" />
-            <div class="cert-info">
-              <h3 data-i18n="certificates.c2">Recommendation Letter</h3>
-              <p data-i18n="certificates.cSub2">Academic Excellence & Character</p>
-            </div>
-          </a>
-    </div>
-  </div>
-</section>
-
-    <!-- Contact & Chat -->
-    <section id="contact" class="contact-section">
-    <div class="container">
-        <div class="section-header center reveal">
-          <p class="section-label" data-i18n="contact.label">&gt; contact.open()</p>
-          <h2 class="section-title" data-i18n="contact.title">Hire me — let's chat</h2>
-          <p class="section-subtitle" data-i18n="contact.subtitle">Send a message below. I usually reply within 24 hours.</p>
-        </div>
-
-        <div class="contact-grid">
-          <div class="contact-intro reveal">
-            <p class="contact-side-title" data-i18n="contact.sideTitle">Other ways to reach me</p>
-
-            <div class="contact-methods">
-              <a href="mailto:abrahamgebreyohannes12@gmail.com" class="contact-item">
-                <span class="ci-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
-                </span>
-                <div>
-                  <span data-i18n="contact.email">Email</span>
-                  <p>abrahamgebreyohannes12@gmail.com</p>
-                </div>
-              </a>
-              <a href="tel:+251949470429" class="contact-item">
-                <span class="ci-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-                </span>
-                <div>
-                  <span data-i18n="contact.phone">Phone</span>
-                  <p>+251 949 470 429</p>
-                </div>
-              </a>
-              <a href="https://t.me/a123abrsh" target="_blank" rel="noopener noreferrer" class="contact-item">
-                <span class="ci-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0h-.056zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-                </span>
-                <div>
-                  <span>Telegram</span>
-                  <p>@a123abrsh</p>
-                </div>
-              </a>
-              <a href="https://github.com/abraham952" target="_blank" rel="noopener noreferrer" class="contact-item">
-                <span class="ci-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                </span>
-                <div>
-                  <span>GitHub</span>
-                  <p>github.com/abraham952</p>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="chat-panel reveal" id="chatPanel">
-            <div class="chat-header">
-              <div class="chat-avatar" aria-hidden="true">AG</div>
-              <div class="chat-header-info">
-                <h3>Abraham Gebreyohannes</h3>
-                <span class="chat-status"><span class="chat-status-dot"></span> <span data-i18n="contact.chatStatus">Online · Replies within 24h</span></span>
-              </div>
-            </div>
-
-            <div class="chat-messages" id="chatMessages" role="log" aria-live="polite" aria-relevant="additions">
-              <div class="chat-msg chat-msg-in">
-                <div class="chat-bubble">
-                  <p data-i18n="contact.chatWelcome1">Hi there! 👋 Thanks for visiting my portfolio.</p>
-                  <p data-i18n="contact.chatWelcome2">I'm open for freelance work, remote roles, and project collaborations. Send me a message — I'll get back to you soon.</p>
-                </div>
-                <time class="chat-time" data-i18n="contact.chatTime">Just now</time>
-              </div>
-            </div>
-
-            <div class="chat-quick-replies" aria-label="Quick message templates">
-              <button type="button" class="quick-reply" data-i18n="contact.qr1" data-i18n-msg="contact.qrMsg1">💼 Hire for a project</button>
-              <button type="button" class="quick-reply" data-i18n="contact.qr2" data-i18n-msg="contact.qrMsg2">🤝 Freelance inquiry</button>
-              <button type="button" class="quick-reply" data-i18n="contact.qr3" data-i18n-msg="contact.qrMsg3">❓ General question</button>
-            </div>
-
-            <form class="chat-form" id="chatForm" novalidate>
-              <div class="chat-form-row">
-                <label class="sr-only" for="chatName">Your name</label>
-                <input type="text" id="chatName" name="name" data-i18n="contact.namePh" data-i18n-placeholder placeholder="Your name" required autocomplete="name" />
-                <label class="sr-only" for="chatEmail">Your email</label>
-                <input type="email" id="chatEmail" name="email" data-i18n="contact.emailPh" data-i18n-placeholder placeholder="Your email" required autocomplete="email" />
-              </div>
-              <label class="sr-only" for="chatMessage">Your message</label>
-              <textarea id="chatMessage" name="message" rows="3" data-i18n="contact.msgPh" data-i18n-placeholder placeholder="Type your message..." required></textarea>
-              <div class="chat-form-footer">
-                <button type="submit" class="btn btn-primary chat-send-btn">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
-                  <span data-i18n="contact.send">Send Message</span>
-                </button>
-                <button type="button" class="btn btn-ghost btn-sm" id="copyEmailBtn" data-email="abrahamgebreyohannes12@gmail.com"><span data-i18n="contact.copyEmail">Copy email</span></button>
-              </div>
-            </form>
-
-            <p class="chat-note" data-i18n-html="contact.chatNote">Messages are sent via email. Prefer Telegram? <a href="https://t.me/a123abrsh" target="_blank" rel="noopener noreferrer">Chat on Telegram</a></p>
-          </div>
-        </div>
-
-        <p class="contact-location reveal" data-i18n="contact.location">📍 Ethiopia · Available for remote work worldwide</p>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Status ticker -->
-  <div class="status-ticker" aria-hidden="true">
-    <div class="ticker-track">
-      <span>● SYSTEM ONLINE</span>
-      <span>● AVAILABLE FOR REMOTE WORK</span>
-      <span>● LARAVEL · PHP · MYSQL · JS</span>
-      <span>● ETHIOPIA → WORLDWIDE</span>
-      <span>● SYSTEM ONLINE</span>
-      <span>● AVAILABLE FOR REMOTE WORK</span>
-      <span>● LARAVEL · PHP · MYSQL · JS</span>
-      <span>● ETHIOPIA → WORLDWIDE</span>
-    </div>
-  </div>
-
-  <button class="back-to-top" id="backToTop" aria-label="Back to top" hidden>
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
-  </button>
-
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-
-  <!-- Footer -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="container">
-      <nav class="footer-links" aria-label="Footer navigation">
-        <a href="#about" data-i18n="nav.about">About</a>
-        <a href="#services" data-i18n="nav.services">Services</a>
-        <a href="#projects" data-i18n="nav.projects">Projects</a>
-        <a href="#contact" data-i18n="nav.hire">Contact</a>
-        <a href="https://github.com/abraham952" target="_blank" rel="noopener noreferrer">GitHub</a>
-      </nav>
-      <p data-i18n="footer.copy">© 2026 Abraham Gebreyohannes. Built with passion in Ethiopia.</p>
-    </div>
-  </footer>
-
-  <!-- Video Modal -->
-  <div class="video-modal" id="videoModal" role="dialog" aria-label="Project demo video" aria-hidden="true">
-    <button class="close-btn" onclick="closeVideo()" aria-label="Close video">&times;</button>
-    <video id="demoVideo" controls>
-      <source src="video/Home - Farmi - Google Chrome 2026-02-03 23-07-36.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-  </div>
-
-  <script src="js/i18n.js"></script>
-  <script src="js/main.js"></script>
-</body>
-</html>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abraham Gebreyohannes | Full-Stack Web Developer</title>
-  <meta name="description" content="Abraham Gebreyohannes — Full-stack web developer specializing in Laravel, PHP, MySQL, and modern JavaScript. Building secure, scalable web applications for healthcare, hospitality, and business." />
-  <meta name="author" content="Abraham Gebreyohannes" />
-  <meta name="keywords" content="Abraham Gebreyohannes, web developer, Laravel, PHP, full-stack, Ethiopia, remote developer" />
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Abraham Gebreyohannes | Full-Stack Web Developer" />
-  <meta property="og:description" content="Building modern, secure, and scalable web applications with Laravel, PHP, and JavaScript." />
-  <meta property="og:url" content="https://abraham952.github.io" />
-  <meta property="og:image" content="https://abraham952.github.io/profile.jpg" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Abraham Gebreyohannes | Full-Stack Web Developer" />
-  <meta name="twitter:description" content="Building modern, secure, and scalable web applications with Laravel, PHP, and JavaScript." />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Noto+Sans+Ethiopic:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/ai-chatbot.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>AG</text></svg>" />
   <script>
     (function () {
@@ -1219,6 +479,62 @@
             </div>
           </article>
 
+          <article class="project-card reveal" data-category="all">
+            <div class="project-thumb">
+              <span class="project-icon" aria-hidden="true">🛒</span>
+          </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-type">Business System</span>
+        </div>
+              <h3>Supermarket Management System</h3>
+              <p>
+                A comprehensive supermarket management system with inventory tracking, sales management, and reporting features — streamlining retail operations and improving efficiency.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Full-Stack</span>
+              <span class="tag">Inventory Management</span>
+              <span class="tag">Business System</span>
+            </div>
+            <div class="project-links">
+                <a href="https://supermarket-management-sys.vercel.app" target="_blank" rel="noopener noreferrer" class="primary-link">
+                  <span>Live Site ↗</span>
+                </a>
+                <a href="https://github.com/abraham952/Super-market-system" target="_blank" rel="noopener noreferrer">
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="all">
+            <div class="project-thumb">
+              <span class="project-icon" aria-hidden="true">🛢️</span>
+          </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-type">Business Website</span>
+        </div>
+              <h3>Leo's Oil</h3>
+              <p>
+                A modern business website for Leo's Oil company showcasing products, services, and company information — designed to enhance brand presence and customer engagement.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Responsive</span>
+              <span class="tag">Business Website</span>
+              <span class="tag">UI/UX</span>
+            </div>
+            <div class="project-links">
+                <a href="https://leos-oil.vercel.app/" target="_blank" rel="noopener noreferrer" class="primary-link">
+                  <span>Live Site ↗</span>
+                </a>
+                <a href="https://github.com/abraham952/leos-oil" target="_blank" rel="noopener noreferrer">
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
@@ -1476,6 +792,7 @@
 
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/knowledge-base.js"></script>
+  <script src="js/ai-chatbot.js"></script>
 </body>
 </html>
->>>>>>> 78674eae1e3cdd7bdbfa28ebe4fcba9e8afae51c
